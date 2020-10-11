@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Login = (props) => {
+const Greet = (props) => {
     console.log(props)
     return (
         <div>
-            <p>Weather App</p>
+            <h1>Hello {props.name}</h1>
         </div>
     )
 }
 
-export default Login
+export default Greet

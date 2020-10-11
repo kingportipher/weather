@@ -1,0 +1,76 @@
+.weather-container{
+    background-color: rgb(162, 128, 163);
+    margin: auto;
+    box-shadow: 2px 4px 16px 0 rgba(0,0,0,0.5);
+    height: 600px;
+    width: 80%;
+}
+.weather-header h3{
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+.weather-div{
+    border-bottom: 2px solid#eee;
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.search-input{
+    background: transparent;
+    border: none;
+    padding: 4px;
+    outline: none;
+    width: 100%;
+    color: thistle;
+    font-size: 1.2rem;
+}
+.weather-header button{
+    border: none;
+    color: rgb(241, 229, 229);
+    cursor: pointer;
+    outline: none;
+}
+.search-input::-webkit-input-placeholder{
+    font-size: 1.1rem;
+    color: thistle;
+    opacity: 0.5;
+}
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    font-size: 1.3rem;
+    align-items: center;
+    margin-top: 75px;
+}
+.weather-info i {
+    color: yellow;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    animation: rotate 5s infinite linear;
+}
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.error{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: tomato;
+    font-size: 1.rem;
+}
+.weather-description h3{
+    text-align: center;
+
+}
+.degree-symbol::after{
+    content: '\00b0';
+}
