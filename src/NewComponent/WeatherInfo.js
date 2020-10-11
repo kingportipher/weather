@@ -1,5 +1,5 @@
-import React from 'react'
-import '../styles/Weather.css';
+import React from 'react';
+import '../Styles/Weather.css';
 
 function WeatherInfo(props){
     const{temp, humidity, desc, city} = props.data;

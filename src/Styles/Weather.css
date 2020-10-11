@@ -4,6 +4,8 @@
     box-shadow: 2px 4px 16px 0 rgba(0,0,0,0.5);
     height: 600px;
     width: 80%;
+    position: relative;
+    padding: 10px;
 }
 .weather-header h3{
     font-size: 1.4rem;
@@ -27,6 +29,12 @@
     width: 100%;
     color: thistle;
     font-size: 1.2rem;
+}
+.search-input::-webkit-input-placeholder{
+    font-size: 1.1rem;
+    color: thistle;
+    opacity: 0.5;
+    
 }
 .weather-header button{
     border: none;

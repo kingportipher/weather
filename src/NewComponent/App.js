@@ -7,7 +7,7 @@ import WeatherInfo from './WeatherInfo';
 function App() {
   return (
     <section className="app-container">
-      <WeatherContainer / >
+      <WeatherContainer />
       
     </section>
   );

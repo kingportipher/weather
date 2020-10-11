@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import '../Styles/Weather.css';
-import './WeatherInfo';
+import WeatherInfo from   './WeatherInfo';
 
  
 
@@ -66,7 +66,7 @@ function WeatherContainer(){
         <header className="weather-header">
             <h3>Weather App</h3>
             <div>
-                <iput 
+                <input 
                 placeholder="zip Code" 
                 className="search-input"
                 onChange={updateSearcQuery}
@@ -74,6 +74,7 @@ function WeatherContainer(){
                 />
 
                 <button onclick={getWeatherData} className="material-icons">search</button>
+                
             </div>
 
             <p className="error">{isValidZipCode? '' : 'Invalid Zip Code'}</p>
@@ -81,7 +82,7 @@ function WeatherContainer(){
             <section className="weather-info">
                 {weatherData.temp === null ? (
                     <p>No weather to Display <i className="material-icons">wb_sunny</i></p>
-                ):''
+                ):<WeatherInfo data={weatherData}/>
             }
 
                 </section>
